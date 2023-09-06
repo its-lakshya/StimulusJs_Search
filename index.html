@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stimulus Table Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div data-controller="table">
+        <input data-action="input->table#filter" type="text" placeholder="Search">
+        <table>
+            <thead>
+                <tr data-table-target="row">
+                    <th>first</th>
+                    <th>last</th>
+                    <th>gender</th>
+                    <th>age</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-table-target="row">
+                    <td>Lakshya</td>
+                    <td>Kumar</td>
+                    <td>Male</td>
+                    <td>22</td>
+                    <td>itslaksh@dev.com</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Helen</td>
+                    <td>Anderson</td>
+                    <td>Female</td>
+                    <td>51</td>
+                    <td>gankih@daila.md</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Esther</td>
+                    <td>Mori</td>
+                    <td>Female</td>
+                    <td>42</td>
+                    <td>kifaew@nunevu.ee</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Carrie</td>
+                    <td>Wiersema</td>
+                    <td>Male</td>
+                    <td>28</td>
+                    <td>tivsubzid@caved.wf</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Ethan</td>
+                    <td>Matsuda</td>
+                    <td>Male</td>
+                    <td>44</td>
+                    <td>fep@luf.fo</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Polly</td>
+                    <td>Ventura</td>
+                    <td>Male</td>
+                    <td>35</td>
+                    <td>vofon@ru.ir</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Francisco</td>
+                    <td>Deschamps</td>
+                    <td>Female</td>
+                    <td>26</td>
+                    <td>siubo@pofofi.uz</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Ella</td>
+                    <td>Krämer</td>
+                    <td>Female</td>
+                    <td>56</td>
+                    <td>mitsueja@of.in</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Harriett</td>
+                    <td>Yates</td>
+                    <td>Male</td>
+                    <td>32</td>
+                    <td>bopke@zut.uk</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Tommy</td>
+                    <td>Schneider</td>
+                    <td>Male</td>
+                    <td>39</td>
+                    <td>ewi@coceso.tz</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Lydia</td>
+                    <td>de Zwart</td>
+                    <td>Female</td>
+                    <td>28</td>
+                    <td>ep@vakiwat.sb</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Jerome</td>
+                    <td>Newman</td>
+                    <td>Female</td>
+                    <td>64</td>
+                    <td>wen@eramaga.vc</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Eddie</td>
+                    <td>Knowles</td>
+                    <td>Female</td>
+                    <td>34</td>
+                    <td>sob@kazecbec.my</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Dean</td>
+                    <td>Newman</td>
+                    <td>Female</td>
+                    <td>22</td>
+                    <td>ivhepsem@goslic.lk</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Elva</td>
+                    <td>Robin</td>
+                    <td>Male</td>
+                    <td>33</td>
+                    <td>sidwire@pekin.ar</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Olga</td>
+                    <td>Galeotti</td>
+                    <td>Female</td>
+                    <td>48</td>
+                    <td>ila@vonatuha.kz</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Della</td>
+                    <td>Newton</td>
+                    <td>Male</td>
+                    <td>18</td>
+                    <td>jadowuw@woc.kw</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Bess</td>
+                    <td>Boucher</td>
+                    <td>Female</td>
+                    <td>27</td>
+                    <td>igenuc@pivcafjig.am</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Rodney</td>
+                    <td>Papi</td>
+                    <td>Female</td>
+                    <td>54</td>
+                    <td>zorez@runake.ro</td>
+                </tr>
+                <tr data-table-target="row">
+                    <td>Susan</td>
+                    <td>Stephens</td>
+                    <td>Male</td>
+                    <td>63</td>
+                    <td>obolot@go.me</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- <script type="module" src="https://unpkg.com/stimulus@2.0.0/dist/stimulus.umd.js"></script> -->
+    <script type="module" src="./node_modules/stimulus/dist/stimulus.umd.js"></script>
+
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
+
+
+
