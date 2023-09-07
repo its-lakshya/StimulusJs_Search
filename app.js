@@ -18,7 +18,4 @@ application.register("table", class extends Stimulus.Controller {
     });
   }
 
-  get queryValue() {
-    return this.query || "";
-  }
 });
